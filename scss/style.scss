@@ -1,0 +1,143 @@
+@import "nullstyle.scss";
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body{
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: rgba(16, 39, 70, 1);
+  line-height: normal;
+}
+
+.wrapper{
+  position: relative;
+  max-width: 1060px;
+  margin-left: 191px;
+  margin-right: 189px;
+}
+
+// Начало стилей для header 
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    .header__wrapper{
+      padding-top: 56px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .header__list{
+      display: flex;
+      flex-wrap: wrap;
+      .header__item{
+        margin-right: 82px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .header__link{
+        font-weight: 400;
+        color: white;
+        &:hover,&:focus,&:active{
+          opacity: 75%;
+        }
+      }
+    }
+ }
+
+
+// Конец стилей для header 
+
+// Начало стилей для intro 
+
+.intro{
+  min-height: 100vh;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+  .intro__title{
+  max-width: 619px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 22px;
+  }
+  .intro__subtitle{
+  width: 546px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 59px;
+  }
+  .search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+    .search-form__field{
+      width: 297px;
+      background: transparent url(../img/svg/Oval.svg) no-repeat left 25%;
+      background-size: 20px;
+      border: 0;
+      border-bottom: 2px solid white;
+      margin-right: 60px;
+      padding-left: 43px;
+      padding-bottom: 22px;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      &::placeholder{
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .search-form__submit{
+      padding: 15px 39px;
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      background: #1B7DFF;
+      border: 0;
+      transition: all 0.8s ease 0.3s;
+      &:hover,&:focus,&:active{
+        background: #041f43;
+      }
+    }
+  }
+}
+
+// Коней стилей для intro 
+
+  
+
+
+
